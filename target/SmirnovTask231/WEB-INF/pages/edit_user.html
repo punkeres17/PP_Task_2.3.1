@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit User</title>
+</head>
+<body>
+<form action="/users/edit" method="post">
+    <input type="hidden" name="id" th:value="${user.id}">
+    <label>Name:</label>
+    <label>
+        <input type="text" name="name" th:value="${user.name}" required>
+    </label>
+    <br>
+    <label>Age:</label>
+    <label>
+        <input type="number" name="age" th:value="${user.age}" required>
+    </label>
+    <br>
+    <button type="submit">Save</button>
+</form>
+<a href="/users">Back to users</a>
+</body>
+</html>

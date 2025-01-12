@@ -1,0 +1,9 @@
+ru\smirnov\task231\model\User.class
+ru\smirnov\task231\dao\UserDaoImp.class
+ru\smirnov\task231\configs\webconfig\SpringServletDispatcherInitializer.class
+ru\smirnov\task231\configs\webconfig\AppConfig.class
+ru\smirnov\task231\controller\UserController.class
+ru\smirnov\task231\service\UserService.class
+ru\smirnov\task231\dao\UserDao.class
+ru\smirnov\task231\configs\hibernateconfig\HibernateConfig.class
+ru\smirnov\task231\service\UserServiceImp.class

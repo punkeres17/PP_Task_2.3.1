@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add user</title>
+</head>
+<body>
+<form action="/users/new" method="post">
+    <label>Name:</label>
+    <label>
+        <input type="text" name="name" required>
+    </label>
+    <br>
+    <label>Age:</label>
+    <label>
+        <input type="number" name="age" required>
+    </label>
+    <br>
+    <button type="submit">Add</button>
+</form>
+<a href="/users">Back to users</a>
+</body>
+</html>
