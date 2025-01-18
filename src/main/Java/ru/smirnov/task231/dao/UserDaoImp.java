@@ -3,7 +3,6 @@ package ru.smirnov.task231.dao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import ru.smirnov.task231.model.User;
 
 import java.util.List;
@@ -14,14 +13,12 @@ public class UserDaoImp implements UserDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Transactional
     @Override
     public void removeUserById(final long id) {
         final User user = getUserById(id);
         entityManager.remove(user);
     }
 
-    @Transactional
     @Override
     public void updateUser(final User user) {
         entityManager.merge(user);
